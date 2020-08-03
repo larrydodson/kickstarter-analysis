@@ -1,4 +1,102 @@
+# Kickstarting with Excel
+**Module 1 Challenge Submission, Written Analysis**
+
+## Overview of Project
+
+Louise has had success in fundraising for her project "Fever". She has now made an additional request for information to learn more about how other same parent and subcategory campaigns performed on Kickstarter. Specifically, the request is for more in-depth information on project launch dates and funding goals. 
+
+## Purpose
+
+Louise wants to know more on how representative campaigns performed in relation to their launch dates and funding goals. Using the same data set as was available from the initial phase of the project, we will continue analysis with focus on these two areas of interest. This additional analysis will add new insights on related Kickstarter crowdfunding campaigns for theater and plays. An increased level of insights would enable Louise to ensure a successful current production for Fever, and also with planning for future new campaign projects. 
+
+
+## Analysis and Challenges
+
+
+
+### Analysis of Outcomes Based on Launch Date
+
+Please see Chart-A, "Theater Outcomes Based on Launch Date"
+
+  The line chart shows the relationship between the Number (or quantity) of Outcomes for the Theater Category (successful, failed or canceled), and the month of a campaign’s launch. The category refers to the resulting project’s status, of successful and meeting it’s funding goal, or if the campaign failed or was canceled, and specifically for theater projects.
+
+
+Chart-A: 
+  ![Theater_Outcomes_vs_Launch.PNG](https://github.com/larrydodson/kickstarter-analysis/blob/master/Theater_Outcomes_vs_Launch.PNG?raw=true)
+
+Observations
+
+- In the generation of this chart the year and month have been derived from a date code within the source data, and from a range of calendar years from 2009 through 2017. And, the number of Outcome occurances have been grouped into each month for each year of the eight year duration. The line chart indicates the number of occurances per month over the entire duration. 
+- Of interest is the comparison of occurances for successful versus failed and versus canceled campaigns. This line chart visualization is an effective tool to show the pattern of relationships between the different occurances and the month of launch. 
+- It can be determined from the chart which are the most optimal months to launch a campaign, and what are the months to possibly to avoid for a launch. 
+- Interpreting the chart, it is seen that the majority of campaigns that were launched in May and June had a higher numbers of success than other months.
+
+
+
+### Analysis of Outcomes Based on Goals
+
+Please see Chart-B, "Outcomes Based on Goal" 
+
+   This line chart shows the relationship between the quantity and category of outcomes versus the size of the funding goal, and specifically for theater/plays campaigns.
+
+Chart-B: 
+  ![Outcomes_vs_Goals.PNG](https://github.com/larrydodson/kickstarter-analysis/blob/master/Outcomes_vs_Goals.PNG?raw=true)
+
+Observations
+-	By using this method, the line chart becomes an  tool to see the relationship of outcomes compared to the level of funding and for success and failure. 
+- The chart implies that there are the ranges of Goal targets that may lead to successful Campaigns, when compared to the other ranges. 
+- In building this chart categories of funding ranges were created, as shown, and then relationship of the number of occurrences of success and failure were counted for each of the funding.  And example of the formula is:  *=COUNTIFS(Kickstarter!$D:$D,">=10000",Kickstarter!$F:$F,"successful",Kickstarter!$D:$D,"<=14999",Kickstarter!T:T,"plays")* 
+
+
+### Challenges and Difficulties Encountered
+- When learning a new function and equation such as the COUNTIFS function for the generation of the Outcomes Based on Goals chart, there is effort to confirm that it is being used correctly. This took some time and correction of a couple of errors on the author's part. 
+- A challenge sometimes is to combine good technical skill when generating the excel tables and charts with effective communications in writing the report, they should go hand-in-hand as equal effect components. A good presentation is based on solid analysis work, but also the communication of the work is equally important. This project is a good example. 
+
+
+## Results
+### **Conclusions and Recommendations.**
+
+**Theater Outcomes based on Launch Date, and when to plan.**
+1. The majority of campaigns that were launched in May and June had higher numbers of success than other months. 
+2. Avoid launching a new campaign during the months of March and at the end of a year in November and December. 
+3. The relationship between successful and failed campaigns track with each other for respective highs and low occurrences through a twelve-month cycle, however the highest peak and gap between the two is in May and June, and supports the recommendation to have a launch in May.
+4. If it is possible, plan for a May launch for a campaign, with project preparation during the months prior to May. 
+
+**Theater/Plays Outcomes based on Goals** 
+
+From the chart we see that the funding Goal ranges that had occurances with the most success are: 
+1. "Less Than 1000"
+2. "25000 to 24999"
+3. "40000 to 44999" 
+
+
+**Limitations of this dataset** 
+- In considering the Launch Date Chart, there can be many reasons for success and failure that we do not have visibility and insufficient data.  as examples, the experience of the project’s team, costs of production, acts of 3rd parties outside of the project team’s control, and more. 
+-	In consideration of the Outcomes Based on Goal chart, a valuable part of the data is the quantity of occurrence for each of the funding Goal ranges. There are much higher numbers of campaigns at the lower ranges compared to the higher ranges, but this is a missing component in this chart. The lower number of campaigns in the higher goal ranges should not have the same weight of impact as the lower goal ranges. 
+-	Currency: there are various currencies in the source data, that are not converted to one as a standard, and this should be done. The charts have used U.S. $, but actual currencies include these: US$, Canadian CAD, British Pounds, Australian AUD, Euros, Norwegian Krone NOK, Swedish Krona SEK, Danish Krone DKK, Mexican Peso MXN
+-	Likely valuable data would come from follow-up on success of theater/plays post-production, how did they progress to completion, did they stay within production budget (funding Goal), how was the box-office take (if there was one), and other related information that would strengthen the overall source data with more variables that could be verified with actual results. 
+
+
+**Recommendations for other possible tables and/or graphs**  
+- Another version of the Outcomes Based on Goal chart, to include the number of occurrences as a sorted data column, that would then indicate the weight of each of the Goal ranges. 
+- A chart to sort the campaigns by country and the currency, then to normalize to a standard currency. There are a higher occurance of canpaigns in the U.S. and Great Britain, but woudl be a good reference to see them  by country to determine there is any meaningful impact. 
+
+
+.
+.end 
+
+
+
+---
+.
+---
+
+...=========================================================================... 
+
 # kickstarter-analysis
+## The following Section is the submitted Module-1 classwork analysis, pre- Module 1 Challenge.
+
+
 UTMCC DataViz Module-1 classwork, an analysis on Kickstarter Campaign data for Louise.
 
 ## Overview of Project - Description and Purpose
